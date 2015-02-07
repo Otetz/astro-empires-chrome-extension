@@ -1,10 +1,10 @@
 
 
 // Saves options to localStorage.
-function save_options() {
-  localStorage['server'] = jQuery('select#server').val();
-  localStorage['email'] = jQuery('input#email').val();
-  localStorage['password'] = jQuery('input#password').val();
+function saveOptions() {
+  localStorage.server = window.$('#server').val();
+  localStorage.email = window.$('#email').val();
+  localStorage.password = window.$('#password').val();
 
   // Update status to let user know options were saved.
   var status = document.getElementById("status");
